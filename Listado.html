@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Actividades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="activityList" class="hidden">
+        <h2>Listado de Actividades</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Inicio</th>
+                    <th>Término</th>
+                    <th>Comuna</th>
+                    <th>Sector</th>
+                    <th>Tema</th>
+                    <th>Nombre</th>
+                    <th>Organizador</th>
+                    <th>Total</th>
+                    <th>Fotos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr onclick="showActivityDetails(1)">
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>Santiago</td>
+                    <td>Recreación</td>
+                    <td>Picnic</td>
+                    <td>Picnic en el Parque</td>
+                    <td>Organizador A</td>
+                    <td>20</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(2)">
+                    <td>08:00</td>
+                    <td>10:00</td>
+                    <td>Valparaíso</td>
+                    <td>Salud</td>
+                    <td>Relajación</td>
+                    <td>Clase de Yoga</td>
+                    <td>Profesor B</td>
+                    <td>30</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(3)">
+                    <td>10:00</td>
+                    <td>12:00</td>
+                    <td>Concepción</td>
+                    <td>Cultura</td>
+                    <td>Fotografía</td>
+                    <td>Caminata Fotográfica</td>
+                    <td>Guía C</td>
+                    <td>15</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(4)">
+                    <td>19:30</td>
+                    <td>21:30</td>
+                    <td>Temuco</td>
+                    <td>Entretenimiento</td>
+                    <td>Cine</td>
+                    <td>Cine al Aire Libre</td>
+                    <td>Comité D</td>
+                    <td>50</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(5)">
+                    <td>17:00</td>
+                    <td>19:00</td>
+                    <td>La Serena</td>
+                    <td>Arte</td>
+                    <td>Cerámica</td>
+                    <td>Taller de Cerámica</td>
+                    <td>Instructor E</td>
+                    <td>12</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(1)">
+                    <td>10:00</td>
+                    <td>12:00</td>
+                    <td>Santiago</td>
+                    <td>Salud</td>
+                    <td>Medicina General</td>
+                    <td>Atención Médica</td>
+                    <td>Hospital ABC</td>
+                    <td>20</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(2)">
+                    <td>14:00</td>
+                    <td>16:00</td>
+                    <td>Valparaíso</td>
+                    <td>Educación</td>
+                    <td>Reforzamiento Escolar</td>
+                    <td>Colegio ABC</td>
+                    <td>Profesor XYZ</td>
+                    <td>30</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(3)">
+                    <td>08:30</td>
+                    <td>10:30</td>
+                    <td>Concepción</td>
+                    <td>Cultura</td>
+                    <td>Teatro</td>
+                    <td>Actuación en Vivo</td>
+                    <td>Teatro Nacional</td>
+                    <td>50</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(4)">
+                    <td>12:00</td>
+                    <td>14:00</td>
+                    <td>Temuco</td>
+                    <td>Deporte</td>
+                    <td>Fútbol</td>
+                    <td>Campeonato Local</td>
+                    <td>Organizador Fútbol</td>
+                    <td>100</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+                <tr onclick="showActivityDetails(5)">
+                    <td>17:00</td>
+                    <td>19:00</td>
+                    <td>La Serena</td>
+                    <td>Artesanía</td>
+                    <td>Exposición de Arte</td>
+                    <td>Galería Arte</td>
+                    <td>Artista Juan</td>
+                    <td>10</td>
+                    <td><img src="https://via.placeholder.com/320x240" alt="Foto" class="photo"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="activityDetails" class="hidden">
+        <h2>Detalles de Actividad</h2>
+        <p id="activityInfo"></p>
+        <div id="activityPhotos"></div>
+
+
+        <a href="portada.html" >
+            <button>Volver a la pagina inicial</button>
+        </a>
+   
+
+    <script src="script.js"></script>
+
+</body>
+</html>

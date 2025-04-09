@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Actividades Recreativas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenido a Actividades Cerca Tuyo</h1>
+    <nav>
+      <!-- Cambio en el botón para redirigir a nueva-actividad.html -->
+      <a href="Nueva Actividad.html">
+        <button>Agregar Actividad</button>
+      </a>
+      <a href="Listado.html">
+        <button>Listado</button>
+      </a>
+      <a href="Estadistica.html">
+        <button>Estadisticas</button>
+    </a>
+    </nav>
+  </header>
+
+  <section id="portada">
+    <h2>Últimas 5 Actividades Agregadas</h2>
+    <ul id="ultimas-actividades">
+      <!-- Actividades dummy para mostrar en portada -->
+      <li><strong>Picnic en el Parque</strong> - 10/04/2025 15:00</li>
+      <li><strong>Clase de Yoga</strong> - 11/04/2025 08:00</li>
+      <li><strong>Caminata Fotográfica</strong> - 12/04/2025 10:00</li>
+      <li><strong>Cine al Aire Libre</strong> - 13/04/2025 19:30</li>
+      <li><strong>Taller de Cerámica</strong> - 14/04/2025 17:00</li>
+    </ul>
+  </section>
+
+  <section id="agregar" class="oculto">
+    <!-- Aquí va el formulario para agregar actividades -->
+  </section>
+
+  <section id="listado" class="oculto">
+    <!-- Aquí va el listado completo de actividades -->
+  </section>
+
+  <section id="estadisticas" class="oculto">
+    <!-- Aquí van las estadísticas -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

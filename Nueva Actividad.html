@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Actividad</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a href="Listado.html">
+    <button>Listado de actividades</button>
+  </a>
+  <h2>Formulario de Actividad</h2>
+  <form id="formulario-actividad">
+    <fieldset>
+      <legend>¿Dónde?</legend>
+      <label>Región:
+        <select id="region">
+          <option value="">Seleccione región</option>
+          <option value="1">Región 1</option>
+          <option value="2">Región 2</option>
+        </select>
+      </label><br>
+      <label>Comuna:
+        <select id="comuna">
+          <option value="">Seleccione comuna</option>
+        </select>
+      </label><br>
+      <label>Sector: <input type="text" id="sector" maxlength="100"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>¿Quién organiza?</legend>
+      <label>Nombre: <input type="text" id="nombre" maxlength="200"></label><br>
+      <label>Email: <input type="email" id="email" maxlength="100"></label><br>
+      <label>Celular: <input type="tel" id="celular" placeholder="+569.12345678"></label><br>
+      <label>Contactar por:
+        <select id="contactar">
+          <option value="">Seleccione</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="telegram">Telegram</option>
+          <option value="instagram">Instagram</option>
+          <option value="otra">Otra</option>
+        </select>
+      </label>
+      <input type="text" id="contacto-id" class="oculto" placeholder="ID o URL">
+    </fieldset>
+
+    <fieldset>
+      <legend>¿Cuándo y de qué trata?</legend>
+      <label>Inicio: <input type="datetime-local" id="inicio"></label><br>
+      <label>Fin: <input type="datetime-local" id="fin"></label><br>
+      <label>Descripción: <textarea id="descripcion" cols="50" rows="10"></textarea></label><br>
+      <label>Tema:
+        <select id="tema">
+          <option value="">Seleccione</option>
+          <option value="musica">Música</option>
+          <option value="deporte">Deporte</option>
+          <option value="tecnologia">Tecnología</option>
+          <option value="comida">Comida</option>
+          <option value="otro">Otro</option>
+        </select>
+      </label>
+      <input type="text" id="tema-otro" class="oculto" placeholder="Especifique">
+      <br>
+      <label>Foto: <input type="file" id="foto" multiple></label>
+      <button type="button" id="agregar-foto">Agregar otra foto</button>
+    </fieldset>
+
+    <button type="button" id="enviar">Agregar esta actividad</button>
+  </form>
+
+  <div id="confirmacion" class="oculto">
+    <p>¿Está seguro que desea agregar esta actividad?</p>
+    <button id="confirmar">Sí, estoy seguro</button>
+    <button id="cancelar">No, quiero volver</button>
+  </div>
+
+  <div id="mensaje-final" class="oculto">
+    <p>Hemos recibido su información. Muchas gracias y suerte en su actividad.</p>
+    <a href="portada.html" >
+      <button>Volver a la pagina inicial</button>
+  </a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
